@@ -1,5 +1,5 @@
 {% set name = "skforecast" %}
-{% set version = "0.14.0" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/skforecast-{{ version }}.tar.gz
-  sha256: c96147f0d353f2fe07dd7ba2b9561b03c426fe6b8000d60f0f3728d53322e9eb
+  sha256: a5bb7f3628c3d79895fda8f6c43e384f446bcf6704323313409773e0d300e322
 
 build:
   noarch: python
@@ -23,13 +23,14 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy >=1.22
+    - numpy >=1.24
     - pandas >=1.5
     - tqdm >=4.57
     - scikit-learn >=1.2
     - optuna >=2.10
     - joblib >=1.1
     - numba >=0.59
+    - rich>=13.9
 
 test:
   imports:
