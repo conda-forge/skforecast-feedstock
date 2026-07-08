@@ -1,5 +1,5 @@
 {% set name = "skforecast" %}
-{% set version = "0.22.0" %}
+{% set version = "0.23.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/skforecast-{{ version }}.tar.gz
-  sha256: c2ca528aee65c048981fa69b2f1dfbbf12d9e71b200a5e6cf49a6d59ad46c504
+  sha256: 358c7f27d567b223b581587c341843035f2ef87479ba77f8e7719f8bd37869c4
 
 build:
   noarch: python
