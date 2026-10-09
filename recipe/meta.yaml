@@ -1,5 +1,5 @@
 {% set name = "skforecast" %}
-{% set version = "0.25.0" %}
+{% set version = "0.26.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/skforecast-{{ version }}.tar.gz
-  sha256: e39abebe9c9cd9e5430b79b1a911b0963a621c3f864f36ff081051ded006313c
+  sha256: f0fe8850c721589aa54a0214cba5eb63cf7dbbdecfe30abec96b18f00724c1e9
 
 build:
   noarch: python
